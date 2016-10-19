@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C52F01D61DB72046004C0BDB /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = C52F01D51DB72046004C0BDB /* readme.md */; };
 		C579757B1DB48CE800ED5C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579757A1DB48CE800ED5C22 /* AppDelegate.swift */; };
 		C579757D1DB48CE800ED5C22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579757C1DB48CE800ED5C22 /* ViewController.swift */; };
 		C57975801DB48CE800ED5C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C579757E1DB48CE800ED5C22 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C52F01D51DB72046004C0BDB /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		C57975771DB48CE800ED5C22 /* imageCrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageCrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C579757A1DB48CE800ED5C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C579757C1DB48CE800ED5C22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		C579756E1DB48CE800ED5C22 = {
 			isa = PBXGroup;
 			children = (
+				C52F01D51DB72046004C0BDB /* readme.md */,
 				C57975791DB48CE800ED5C22 /* imageCrop */,
 				C57975781DB48CE800ED5C22 /* Products */,
 			);
@@ -146,6 +149,7 @@
 			files = (
 				C579757D1DB48CE800ED5C22 /* ViewController.swift in Sources */,
 				C579758F1DB48E4500ED5C22 /* cropView.swift in Sources */,
+				C52F01D61DB72046004C0BDB /* readme.md in Sources */,
 				C579757B1DB48CE800ED5C22 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
