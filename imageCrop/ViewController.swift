@@ -28,13 +28,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         
     }
     
-    @IBAction func tapResetButton(_ sender: AnyObject) {
-        imageView.frame = originalFrame
-        imageView.image = originalImage
-        self.imageView.isHidden = true
-        cView.isHidden = false
-        cView.resetViews()
-    }
     
     //切り取り処理
     //切り取った後、imageViewのframeを更新
@@ -44,10 +37,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
             self.imageView.image = cView.passCroppedImage()
             self.imageView.isHidden = false
             cView.isHidden = true
-            sender.setTitle("切り取り開始", for: .normal)
+            sender.setTitle("リセット", for: .normal)
         } else {
+            //リセット
             self.imageView.isHidden = true
             self.cView.isHidden = false
+            cView.resetViews()
             sender.setTitle("切り取り", for: .normal)
         }
         
@@ -62,7 +57,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         } else {
             imageView.frame.size.width = imageView.image!.size.width * imageView.frame.size.height / imageView.image!.size.height
         }
-        outerView.frame = imageView.bounds
+        outerView.bounds = imageView.bounds
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -83,7 +79,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         self.outerView.addSubview(cView)
         
         self.imageView.isHidden = true
-        
         
         
     }
