@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11201"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,36 +12,96 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JI7-F7-M2o">
+                    <frame key="frameInset" width="300" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyn-9A-1cw">
-                    <frame key="frameInset" minX="30" minY="79" width="240" height="128"/>
+                    <frame key="frameInset" minX="20" minY="20" width="259" height="256"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5k-iy-auo">
-                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHc-Sl-McH">
+                            <frame key="frameInset" width="16" height="15"/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="SiG-WC-ot2"/>
+                                <constraint firstAttribute="height" constant="15" id="zqy-J6-PEl"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
                     <constraints>
+                        <constraint firstItem="aHc-Sl-McH" firstAttribute="leading" secondItem="w5k-iy-auo" secondAttribute="leading" id="6A3-SW-5mE"/>
                         <constraint firstAttribute="height" constant="44" id="ssU-I8-PiR"/>
                         <constraint firstAttribute="width" constant="44" id="uWs-6N-TJs"/>
+                        <constraint firstItem="aHc-Sl-McH" firstAttribute="top" secondItem="w5k-iy-auo" secondAttribute="top" id="zwl-cb-yVb"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eO-xP-pso">
-                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="web-sj-59d">
+                            <frame key="frameInset" minX="29" width="16" height="15"/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="604-hT-S12"/>
+                                <constraint firstAttribute="height" constant="15" id="IUm-yo-Wei"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
                     <constraints>
+                        <constraint firstItem="web-sj-59d" firstAttribute="top" secondItem="0eO-xP-pso" secondAttribute="top" id="DgH-Py-P1u"/>
+                        <constraint firstAttribute="trailing" secondItem="web-sj-59d" secondAttribute="trailing" id="Evg-04-ity"/>
                         <constraint firstAttribute="height" constant="44" id="cBb-Yt-Dvb"/>
                         <constraint firstAttribute="width" constant="44" id="gPf-Rt-Rxh"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaE-vP-dmN">
-                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q7k-uA-onv">
+                            <frame key="frameInset" minY="29" width="16" height="15"/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="GNT-k1-m0V"/>
+                                <constraint firstAttribute="height" constant="15" id="pGa-Rd-vYB"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
                     <constraints>
                         <constraint firstAttribute="width" constant="44" id="Cca-mm-PZ4"/>
                         <constraint firstAttribute="height" constant="44" id="DWe-EQ-K9b"/>
+                        <constraint firstAttribute="bottom" secondItem="q7k-uA-onv" secondAttribute="bottom" id="Ffc-mh-0fA"/>
+                        <constraint firstItem="q7k-uA-onv" firstAttribute="leading" secondItem="xaE-vP-dmN" secondAttribute="leading" id="We6-ok-5tt"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sl2-qu-HMq">
-                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ha-uH-PLc">
+                            <frame key="frameInset" minX="29" minY="29" width="16" height="15"/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="28O-aS-0S4"/>
+                                <constraint firstAttribute="width" constant="15" id="fqY-mA-Iln"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="OCS-xN-mdz"/>
+                        <constraint firstAttribute="trailing" secondItem="0Ha-uH-PLc" secondAttribute="trailing" id="VF5-a2-XZs"/>
+                        <constraint firstAttribute="bottom" secondItem="0Ha-uH-PLc" secondAttribute="bottom" id="h8J-Ln-oCn"/>
                         <constraint firstAttribute="width" constant="44" id="tVw-Vr-lQO"/>
                     </constraints>
                 </view>
@@ -64,6 +124,7 @@
                 <outlet property="RAView" destination="0eO-xP-pso" id="DHP-Nh-uop"/>
                 <outlet property="RBView" destination="sl2-qu-HMq" id="juF-G0-LbF"/>
                 <outlet property="crop" destination="oyn-9A-1cw" id="Srg-Jl-5AZ"/>
+                <outlet property="imageView" destination="JI7-F7-M2o" id="Rcm-4G-H7y"/>
             </connections>
             <point key="canvasLocation" x="72" y="91"/>
         </view>
